@@ -110,7 +110,6 @@ def movies_with_directors_set(source)
     sub_array = []
     while movie_index < source[director_index][:movies].length do
     collection = movies_with_director_key(name, source[director_index][:movies])
-    #sub_array << {:title => title, :director_name => name}
     sub_array << collection[movie_index]
     movie_index += 1 
   end
